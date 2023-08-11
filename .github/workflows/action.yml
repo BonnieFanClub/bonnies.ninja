@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Bonnie
-      url: ${{ steps.deploy_to_pages.outputs.github_pages_url }}
+      url: https://bonnies.ninja/
     steps:
       - name: Checkout
         uses: actions/checkout@v3
