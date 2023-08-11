@@ -19,6 +19,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "styled-components": "^6.0.7"
   }
 }
