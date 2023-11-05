@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
+
+
+:root {
+    text-align: center;
+    background: rgb(241, 157, 157);
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+*{
+    margin: 0;
+
+    .container {
+      margin-top: 50px;
+  }
+
+
+
+
+  
+#button1 {
+      background-color: rgb(255, 156, 134);
+      transition: all 300ms;
+
+}
+
+  
+#button2 {
+      background-color: #89fa9e;
+      transition: all 300ms;
+}
+
+  
+#button3 {
+      background-color: #a796f3;
+      transition: all 300ms;
+}
+
+  
+#button4 {
+      background-color: #7dbefb;
+      transition: all 300ms;
+}
+
+
+}
+html,body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+h1 {
+    max-width: 70vh;
+    font-size: 5vh;
+    font-weight: 100;
+    color: rgb(123, 69, 69); 
+    filter: drop-shadow(2vh 2vh 2vh rgb(109, 56, 56)); 
+    transition: all 300ms;
+    z-index: 1;
+}
+
+h1:hover  {
+   /*font-size: 6vh;*/
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 5vh;
+    color: rgb(123, 69, 69);
+    filter: drop-shadow(2vh 2vh 2vh rgb(109, 56, 56));  
+    transition: all 300ms;
+}  
+
+h2:hover  {
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+p{
+    font-weight: 300;
+    font-size: 4vh;
+    color: rgb(179, 100, 100);
+    filter: drop-shadow(2vh 2vh 2vh rgb(109, 56, 56));
+    transition: all 300ms;
+}
+
+p:hover  {
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+
+
+#bonnie-image {
+    height: 55vh;
+    transition: all 300ms;
+}
+
+.bonnie-image {
+    filter: drop-shadow(2vh 2vh 2vh rgb(109, 56, 56));
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: auto;
+}
+
+#bonnie-image:hover {
+    height: 60vh;
+    cursor: pointer;
+}
+
+#hour {
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    color: rgb(212, 122, 122);
+    z-index: 0;
+}
+
+body {
+    --s: 25vmin;
+    --p: calc(var(--s) / 2);
+    --c1: rgb(255, 255, 255);
+    --c2: rgb(224, 224, 224);
+    --c3: rgb(255, 181, 181);
+    --bg: var(--c3);
+    --d: 10000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+    
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+    animation: 
+      color var(--d) var(--e) infinite,
+      position var(--d) var(--e) infinite;
+  }
+  
+  @keyframes color {
+    0%, 25% {
+      --bg: var(--c3);
+    }
+    26%, 50% {
+      --bg: var(--c1);
+    }
+    51%, 75% {
+      --bg: var(--c3);
+    }
+    76%, 100% {
+      --bg: var(--c2);
+    }
+  }
+  
+  @keyframes position {
+    0% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  0), 
+        calc(var(--p) * -1) calc(var(--p) *  1), 
+        calc(var(--p) *  1) calc(var(--p) * -1), 
+        calc(var(--p) * -1) calc(var(--p) *  0);
+    }
+    25% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  4), 
+        calc(var(--p) * -1) calc(var(--p) *  5), 
+        calc(var(--p) *  1) calc(var(--p) *  3), 
+        calc(var(--p) * -1) calc(var(--p) *  4);
+    }
+    50% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 8), 
+        calc(var(--p) * -3) calc(var(--p) * 9), 
+        calc(var(--p) *  2) calc(var(--p) * 7), 
+        calc(var(--p) * -2) calc(var(--p) * 8);
+    }
+    75% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 12), 
+        calc(var(--p) * -3) calc(var(--p) * 13), 
+        calc(var(--p) *  2) calc(var(--p) * 11), 
+        calc(var(--p) * -2) calc(var(--p) * 12);
+    }
+    100% {    
+      background-position: 
+        calc(var(--p) *  5) calc(var(--p) * 16), 
+        calc(var(--p) * -5) calc(var(--p) * 17), 
+        calc(var(--p) *  5) calc(var(--p) * 15), 
+        calc(var(--p) * -5) calc(var(--p) * 16);
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    body {
+      animation: none;
+    }
+  }
+
+.socials{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: 5px;
+}
+
+.social {
+  padding: 5px;
+}
+
+.soc-img {
+  width: 30px;
+  height: 30px;
+  transition: 300ms;
+}
+
+.soc-img:hover {
+  width: 40px;
+  height: 40px;
+}
+
+.color-button {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 100%; 
+  padding: 10px 10px;
+  transition: all 500ms;
+}
+
+.color-button:hover {
+  height: 60px;
+  width: 60px;
+}

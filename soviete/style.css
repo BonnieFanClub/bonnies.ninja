@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+:root {
+    background: red;
+    font-family: 'Playfair Display', serif;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vh;
+    color: gold;
+    z-index: 1;
+}
+
+#Matrix {
+    z-index: -1;
+    top: 0;
+    position: fixed;
+}
+
+#bonnie-image {
+    height: 50vh;
+    filter: drop-shadow(2vh 2vh 2vh rgb(0, 0, 0));
+    animation: bonnie-image 5s infinite alternate ;
+    position: fixed;
+    bottom: 10vh;
+    z-index: 0;
+}
+@keyframes bonnie-image {
+    0% {
+        transform: translate(-10px, 0) rotate(-10deg) skew(0deg);
+    }
+    
+    33% {
+        transform: translate(10px, 0) rotate(10deg) skew(5deg);
+    }
+    
+    66% {
+        transform: translate(0px, 10px) rotate(-10deg) skew(-5deg);
+    }
+    
+    100% {
+        transform: translate(10px, 0) rotate(10deg) skew(0deg);
+    }
+}
+
+#chapot-image {
+    animation: chapot-image 5s infinite alternate;
+    height: 11vh;
+    z-index: 1;
+    position: fixed;
+    bottom: 49.9vh;
+    left: 46.5vw;
+    rotate: 0deg;
+}
+
+@keyframes chapot-image {
+    0% {
+        transform: translate(-40px, 0) rotate(-10deg);
+    }
+    
+    33% {
+        transform: translate(20px, 0) rotate(10deg);
+    }
+    
+    66% {
+        transform: translate(-30px, 10px) rotate(-10deg);
+    }
+    
+    100% {
+        transform: translate(20px, 0) rotate(10deg);
+    }
+}
+
+.img {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
